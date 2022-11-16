@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
+import React, { useState } from 'react';
+// import Button from 'react-bootstrap/Button';
+import Button_Cart from "./Button_Cart"
+import Button_SU from "./Button_SU"
 import { Link } from 'react-router-dom';
 // import * as Icons from "react-icons/fa";
 import './Navbar.css';
@@ -75,7 +77,6 @@ import Dropdown from "./Dropdown";
 
 function Navbar() {
   const [dropdown, setDropdown] = useState(false);
-
   return (
     <>
       <nav className="navbar">
@@ -107,7 +108,10 @@ function Navbar() {
             );
           })}
         </ul>
-        {/* <Button /> */}
+        <Button_Cart/>
+        <Button_SU/>
+        {/* <Button variant='info' href="/cart" >Cart</Button>{' '}
+        <Button variant='warning' href="/signup">Sign Up/<br/>Log In</Button> */}
       </nav>
     </>
   );
