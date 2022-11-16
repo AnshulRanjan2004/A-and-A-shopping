@@ -19,12 +19,6 @@ export const navItems = [
       cName: "nav-item",
     },
 
-    {
-      id: 4,
-      title: "Sign Up",
-      path: "./signup",
-      cName: "nav-item",
-    },
   ];
   
   export const productDropdown = [
