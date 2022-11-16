@@ -1,7 +1,9 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
+// import { Button } from './Button';
 import './HeroSection.css';
+import Button from 'react-bootstrap/Button';
+
 
 function HeroSection() {
   return (
@@ -10,12 +12,13 @@ function HeroSection() {
       <h1>FASHION AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
-        <Button
+        {/* <Button
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'>
           GET STARTED
-        </Button>
+        </Button> */}
+        <Button variant='info' href='/products'>GET STARTED</Button>
       </div>
     </div>
   );
