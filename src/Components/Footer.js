@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from './Button';
+import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 
 function Footer() {
@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Fashion newsletter to receive our best vacation deals
+          Join the Fashion newsletter to receive our best fashion deals
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
@@ -21,7 +21,7 @@ function Footer() {
               type='email'
               placeholder='Your Email'
             />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <Button variant='info'>Subscribe</Button>
           </form>
         </div>
       </section>
