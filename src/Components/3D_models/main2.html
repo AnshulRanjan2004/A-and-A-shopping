@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <title>3D Project</title>
+    </head>
+    <body>
+      <script type="module" src="https://unpkg.com/@google/model-viewer"></script>
+<script src="https://unpkg.com/focus-visible/dist/focus-visible.js" defer></script>
+<model-viewer src="./scene-chickenproj.glb" poster="file:///C:/Users/Hansraj/Desktop/3d/project/minecraft-chicken/poster.webp" shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look" camera-controls alt="3D models of minecraft animals">
+  
+    <button slot="ar-button" id="ar-button">
+      View in your space
+    </button>
+    <div id="ar-prompt">
+      <img src="https://cdn.khronos.org/assets/blog/live-gltf-asset-editing-in-your-browsereven-in-ar/hand.png">
+      
+  </div>
+    <div id="ar-prompt">
+      <img src="https://modelviewer.dev/assets/hand.png">
+    </div>
+  
+    <button id="ar-failure">
+      AR is not tracking!
+    </button>
+  
+    <div class="slider">
+      <div class="slides">
+        <button class="slide selected" onclick="switchSrc(this, 'chickenproj')" style="background-image: url('https://media.sketchfab.com/models/2968358f83af441db2b8e7c097f0173e/thumbnails/558e94c7d0c94e13add0acc4ece25079/74c4e92b443b4871bfc453709fea678a.jpeg');">
+  
+        </button><button class="slide" onclick="switchSrc(this, 'cowproj')" style="background-image: url('https://media.sketchfab.com/models/a02041b58eb442c7a6a1bf2e031ee30d/thumbnails/c9ed41319bc34ef7a376d5e2697ee3f0/b75b96b349384f038a0907987aea452d.jpeg');">
+       
+        </button><button class="slide" onclick="switchSrc(this, 'horseproj')" style="background-image: url('https://media.sketchfab.com/models/cb34dbb8bd17433d94b916d7023e0d52/thumbnails/f649293a057a438e9d6c6f290d017d5f/5a8028f0482343b0aad3c3d2507b06d5.jpeg');">
+  
+        </button><button class="slide" onclick="switchSrc(this, 'sheepproj')" style="background-image: url('https://media.sketchfab.com/models/5f06884e82394845bb1a4706a7ef548e/thumbnails/f3c42b7a97ec4b70b04836bbd63e6704/71a052f5568845719a1f932972f96378.jpeg');">
+        
+        </button><button class="slide" onclick="switchSrc(this, 'wolfproj')" style="background-image: url('https://media.sketchfab.com/models/9aa99b5c203240f7ac357c4e8b84e1d6/thumbnails/29ed6013239240bbb6face72be28347e/25c0b65fb7b64e668edc9cc69422730d.jpeg');">
+        
+         
+      </button></div>
+    </div>
+  </model-viewer>
+  
+  <script type="module">
+    const modelViewer = document.querySelector("model-viewer");
+  
+    window.switchSrc = (element, name) => {
+      const base = "./scene-" + name;
+      modelViewer.src = base + '.glb';
+      modelViewer.poster = "file:///C:/Users/Hansraj/Desktop/3d/project/minecraft-" +name+ '/poster.webp';
+      const slides = document.querySelectorAll(".slide");
+      slides.forEach((element) => {element.classList.remove("selected");});
+      element.classList.add("selected");
+    };
+  
+    document.querySelector(".slider").addEventListener('beforexrselect', (ev) => {
+      // Keep slider interactions from affecting the XR scene.
+      ev.preventDefault();
+    });
+  </script>
+  
+  <style>
+    /* This keeps child nodes hidden while the element loads */
+    :not(:defined) > * {
+      display: none;
+    }
+  
+    model-viewer {
+      width: 100%;
+        height: 700px;
+      background-color: rgba(193, 54, 193, 0.54);
+      overflow-x: hidden;
+      --poster-color: rgba(255, 255, 255, 0);
+    }
+  
+    #ar-button {
+      background-image: url(https://cdn.khronos.org/assets/blog/live-gltf-asset-editing-in-your-browsereven-in-ar/ic_view_in_ar_new_googblue_48dp.png);
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      background-position: 12px 50%;
+      background-color: #7dc9b3;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      bottom: 200px;
+      padding: 0px 16px 0px 40px;
+      font-family: Roboto Regular, Helvetica Neue, sans-serif;
+      font-size: 14px;
+      color:#1c008a;
+      height: 36px;
+      line-height: 36px;
+      border-radius: 18px;
+      border: 1px solid #00ff1121212104;
+    }
+  
+    #ar-button:active {
+      background-color: #f8100c;
+    }
+  
+    #ar-button:focus {
+      outline: none;
+    }
+  
+    #ar-button:focus-visible {
+      outline: 1px solid #0049be;
+    }
+  
+    @keyframes circle {
+      from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
+      to   { transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg); }
+    }
+  
+    @keyframes elongate {
+      from { transform: translateX(100px); }
+      to   { transform: translateX(-100px); }
+    }
+  
+    model-viewer > #ar-prompt {
+      position: absolute;
+      left: 50%;
+      bottom: 175px;
+      animation: elongate 2s infinite ease-in-out alternate;
+      display: none;
+    }
+  
+    model-viewer[ar-status="session-started"] > #ar-prompt {
+      display: block;
+    }
+  
+    model-viewer > #ar-prompt > img {
+      animation: circle 4s linear infinite;
+    }
+  
+    model-viewer > #ar-failure {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 175px;
+      display: none;
+    }
+  
+    model-viewer[ar-tracking="not-tracking"] > #ar-failure {
+      display: block;
+    }
+  
+    .slider {
+      width: 100%;                   
+      text-align: center;
+      overflow: hidden;
+      position: absolute;
+      bottom: 160px;  
+      left: 150px;
+    }
+  
+    .slides {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .slide {
+      scroll-snap-align: start;
+      flex-shrink: 0;
+      width: 100px;
+      height: 100px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: rgba(38, 200, 203, 0.785);
+      margin-right: 100px;
+      border-radius: 10px;
+      border: none;
+      display: flex;
+    }
+  
+    .slide.selected {
+      border: 10px solid #11223c;
+    }
+  
+    .slide:focus {
+      outline: none;
+    }
+  
+    .slide:focus-visible {
+      outline: 10px solid #11223c;
+    }
+  
+  </style>
+  
+  </body>
+</html>

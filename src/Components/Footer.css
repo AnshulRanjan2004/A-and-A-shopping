@@ -161,3 +161,12 @@
   
   @media screen and (max-width: 768px) {
   }
+
+  .footer_button{
+    background: rgb(21, 124, 124);
+  }
+
+  .footer_button.hover{
+    background: rgb(205, 234, 234);
+    color:rgb(21, 124, 124);
+  }

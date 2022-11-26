@@ -127,16 +127,18 @@
   }
 
   .card:hover{
-    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253)!important;
+    box-shadow: 5px 20px 20px 5px rgba(4, 36, 50, 0.253)!important;
   }
 
   .card-body{
     padding: 3rem 0 !important;
+    background-color: rgb(214, 227, 228);
   }
 
   .card-text{
     font-size: .9rem;
     padding: 0.4rem 1.9rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   container-fluid.row{
@@ -156,4 +158,9 @@
     transform: scale(1.8);
   }
 
+
+  .container-fluid{
+    background-color: rgb(139, 168, 168);
+    flex: auto;
+  }
   

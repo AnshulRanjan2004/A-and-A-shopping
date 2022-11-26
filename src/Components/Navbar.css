@@ -193,12 +193,13 @@
     color: white;
     font-size: 1.1rem;
     margin-right: 0.01px;
-    padding: 6px 16px;
+    padding: 7px 16px;
     border-radius: 5px;
   }
   
   .nav-item a:hover {
-    background: rgb(0, 212, 212);
+    background: rgb(21, 124, 124);
+    color:#fff
   }
   
 
