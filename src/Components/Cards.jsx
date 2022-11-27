@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import Card from "./CardUI";
-import Model_view from "./Pages/model";
+// import Model_view from "./Pages/model";
 // import img-name from "../assets/img-src" 
 // do same thing for all
 
@@ -15,7 +15,6 @@ class Cards extends Component{
             <div className="container-fluid d-flex justify-content-center">
                 <div className="col-md-4">
                     <Card title="Tops"/>
-                    <Model_view title='tops'/>
                 </div>
                 <div className="col-md-4">
                     <Card title="Bottoms"/>
