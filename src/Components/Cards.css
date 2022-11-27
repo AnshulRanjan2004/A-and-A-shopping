@@ -133,6 +133,7 @@
   .card-body{
     padding: 3rem 0 !important;
     background-color: rgb(214, 227, 228);
+    
   }
 
   .card-text{
@@ -162,5 +163,6 @@
   .container-fluid{
     background-color: rgb(139, 168, 168);
     flex: auto;
+    margin: auto;
   }
   

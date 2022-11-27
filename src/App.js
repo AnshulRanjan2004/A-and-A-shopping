@@ -5,6 +5,7 @@ import Home from './Components/Pages/Home';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Products from './Components/Pages/Product';
 import SignUp from './Components/Pages/SignUp';
+import ContactUs from './Components/Pages/ContactUs';
 import Cart from './Components/Pages/Cart';
 import Tops from './Components/Pages/Tops';
 import Bottoms from './Components/Pages/Bottoms';
@@ -23,6 +24,7 @@ function App() {
           <Route path='/bottoms' element={<Bottoms/>} />
           <Route path='/dresses' element={<Dresses/>} />
           <Route path='/accessories' element={<Accessories/>} />
+          <Route path='/contactus' element={<ContactUs/>} />
           <Route path='/signup' element={<SignUp/>} />
           <Route path='/Cart' element={<Cart/>} />
         </Routes>

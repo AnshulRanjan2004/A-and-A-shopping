@@ -7,7 +7,7 @@ const Card = props=>{
             <div className='overflow'>
 
                 <a href="C:\Users\anves\OneDrive\Documents\GitHub\A-and-A-shopping\src\Components\3D_models\acc1.html" target="_blank" rel="noreferrer">
-                <img src='https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' alt='Fashion' />
+                <img src={props.img} alt='Fashion' />
                 </a>
             </div>
         

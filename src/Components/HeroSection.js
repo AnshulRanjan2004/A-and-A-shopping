@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
+      <video src='https://player.vimeo.com/external/274645324.sd.mp4?s=75fb119219002bc092e045853b62209ace9ef282&profile_id=164&oauth2_token_id=57447761' autoPlay loop muted />
       <h1>FASHION AWAITS</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>

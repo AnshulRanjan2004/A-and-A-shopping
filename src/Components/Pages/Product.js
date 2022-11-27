@@ -7,7 +7,7 @@ import Footer from '../Footer';
 function Product() {
   return (
     <>
-      <HeroSection/>
+      
       <Cards />
       <Footer />
       

@@ -9,7 +9,7 @@ const Items = ({ id, description, title, img, price, quantity }) => {
       <div className="items-info">
         <div className="product-img">
           <img src={img} alt="iamge" />
-          <a href="/model">view in 3D</a>
+          <a href="/model" className='btn btn-outline-success'>view in 3D</a>
         </div>
 
         <div className="title">
