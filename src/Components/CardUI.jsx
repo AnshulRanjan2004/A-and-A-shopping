@@ -14,7 +14,7 @@ const Card = props=>{
             <div className='card-body text-dark'>
                 <h4 className='card-title'>{props.title}</h4>
                 <p className='card-text text-secondary'>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae soluta obcaecati vitae incidunt vero animi repellendus doloremque consectetur doloribus ex.
+                    Part of our latest collection - Meraki
                 </p>
                 <a href='/cart' className='btn btn-outline-success'>Add To Cart</a>
                 <a href='/cart' className='btn btn-outline-success'>Buy Now</a>
