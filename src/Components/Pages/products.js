@@ -5,7 +5,7 @@ export const products = [
       description: "Denim",
       price: "3500",
       img: "https://asset1.cxnmarksandspencer.com/is/image/mands/SD_03_T16_6466M_E2_X_EC_90?$PDP_INT_IMAGE_MOBILE_DOUBLE$",
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ export const products = [
       description: "Polo T-Shirt",
       price: "1500",
       img: "https://5.imimg.com/data5/DV/ZI/FA/SELLER-1754317/striped-polo-t-shirt-500x500.jpeg",
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 3,
@@ -21,7 +21,7 @@ export const products = [
       description: "Cream Sweater",
       price: "2000",
       img: "https://us.benetton.com/dw/image/v2/BBSF_PRD/on/demandware.static/-/Sites-ucb-master/default/dwe85b9f0a/images/Full_PDP_h/Benetton_22A_1002D4488_000_FS_Full_PDP_h.jpg?sw=2400&sh=1800",
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 4,
@@ -29,7 +29,7 @@ export const products = [
       description: "Dark Blue Denim",
       price: "4000",
       img: "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTx-bokgUCgwL-qAfUayy_COCXEw1O3BCxn1UvbYWun3Jew8A7kJWUsPcu6dlHfqKCHsRLiU_vklkI&usqp=CAc",
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 5,
@@ -37,7 +37,7 @@ export const products = [
       description: "Champion Sweatpants",
       price: "2500",
       img: "https://www-cdn.champion.com/catalog/product/H/N/HNS_CAF621/HNS_CAF621_OxfordHeather_Front.jpg?width=550&quality=85&sharpen=a1,r1,t2&auto=webp&resize-filter=bicubic",
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 6,
@@ -45,7 +45,7 @@ export const products = [
       description: "Black Jeans",
       price: "3500",
       img: "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fbf%2Fb0%2Fbfb015c9861ca2121541f2742db763e997f62d39.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_jeans_skinny%5D%2Ctype%5BDESCRIPTIVESTILLLIFE%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 7,
@@ -53,7 +53,7 @@ export const products = [
       description: "Green A-line",
       price: "2000",
       img: "https://cdn2.stylicy.com/global/image-1294-141971129-1-big-hr.jpg",
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 8,
@@ -61,7 +61,7 @@ export const products = [
       description: "Tan Leather Skirt",
       price: "1500",
       img: "https://images.bestsellerclothing.in/data/vero-moda/26-july-2022/205417004_g6.jpg?width=1080&height=1355&mode=fill&fill=blur&format=auto",
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 9,
@@ -69,7 +69,7 @@ export const products = [
       description: "White Floral Dress",
       price: "2500",
       img: "https://www.jiofab.com/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/f/l/floral-print-white-colour-digital-print-knee-length-dress-jf502515.jpg",
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 10,
@@ -77,7 +77,7 @@ export const products = [
       description: "Bucket Hat",
       price: "500",
       img: "https://m.media-amazon.com/images/I/61-cCdyB6wL._UL1001_.jpg",
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 11,
@@ -85,7 +85,7 @@ export const products = [
       description: "Black Belt",
       price: "1200",
       img: "https://m.media-amazon.com/images/I/81kzaF24XjL._UX569_.jpg",
-      quantity: 1,
+      quantity: 0,
     },
     {
       id: 12,
@@ -93,6 +93,6 @@ export const products = [
       description: "Charm Bracelet",
       price: "700",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr7-5YThjlqiFU1Z7bxTjIPp4z8-OGj9KooQ&usqp=CAU",
-      quantity: 1,
+      quantity: 0,
     },
   ];

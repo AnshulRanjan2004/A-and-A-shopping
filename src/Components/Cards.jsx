@@ -1,8 +1,6 @@
 import React, {Component} from "react";
 import Card from "./CardUI";
-// import Model_view from "./Pages/model";
-// import img-name from "../assets/img-src" 
-// do same thing for all
+
 
 class Cards extends Component{
     constructor(props){

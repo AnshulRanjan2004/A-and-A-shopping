@@ -1,12 +1,13 @@
 import React from "react";
 import "./Cards.css"
 
+
 const Card = props=>{
     return(
         <div className='card text-center shadow'>
             <div className='overflow'>
 
-                <a href="C:\Users\anves\OneDrive\Documents\GitHub\A-and-A-shopping\src\Components\3D_models\acc1.html" target="_blank" rel="noreferrer">
+                <a href={props.model} target="_blank" rel="noreferrer">
                 <img src={props.img} alt='Fashion' />
                 </a>
             </div>

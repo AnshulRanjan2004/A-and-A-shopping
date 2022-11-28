@@ -219,7 +219,7 @@ header {
   margin: 0 1rem;
   border-radius: 0.5rem;
   outline: none;
-  background-color: transparent;
+  background-color: black;
 }
 
 .add-minus-quantity input:focus {

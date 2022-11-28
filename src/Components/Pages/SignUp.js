@@ -16,7 +16,7 @@ export const SignUp = () => {
                   <input type="password" placeholder="Create Password" required class="input-box"/>
                   <input type="checkbox" id="terms"/>
                   <label for="terms">I accept the terms & conditions.</label>
-                  <button type="submit">SIGN UP <span>&#x27f6;</span></button>
+                  <a href='/' className='btn btn-outline-success'><button type='submit'>SIGN UP <span>&#x27f6;</span></button></a>
               </form>
           </div>
           <div class="right-box">
