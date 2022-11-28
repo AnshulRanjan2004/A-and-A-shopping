@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import Iframe from 'react-iframe'
+// import Iframe from 'react-iframe'
 
 function Model41(){
   return(
