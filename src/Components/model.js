@@ -1,11 +1,14 @@
 import React from 'react';
 import '../App.css';
+import Iframe from 'react-iframe'
 
-function Model() {
-    // redirect to external URL
-    window.location.replace('C:/Users/anves/OneDrive/Documents/GitHub/A-and-A-shopping/src/Components/3D_models/pants3.html');
+function Model(){
+  return(
+    // <iframe title="Floral dress" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/e0088599a17349c29e2b285de7568b41/embed"> </iframe> 
   
-    return null;
-  }
+    <center><iframe title="Denim shirt - Hellbrush | Viacheslav Nikulaichev" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/93189d4d74344474952256c666537d7e/embed"> </iframe>
+    </center>
+    )
+}
 
 export default Model;

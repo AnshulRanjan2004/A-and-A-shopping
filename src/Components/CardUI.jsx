@@ -18,7 +18,7 @@ const Card = props=>{
                 </p>
                 <a href='/cart' className='btn btn-outline-success'>Add To Cart</a>
                 <a href='/cart' className='btn btn-outline-success'>Buy Now</a>
-                <a href='/model' className='btn btn-outline-success'>View in 3D</a>
+                <a href={props.model} className='btn btn-outline-success'>View in 3D</a>
             </div>
         </div>
         
