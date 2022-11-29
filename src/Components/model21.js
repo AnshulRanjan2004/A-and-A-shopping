@@ -1,5 +1,7 @@
 import React from 'react';
 import '../App.css';
+import './model.css';
+
 // import Iframe from 'react-iframe'
 
 function Model21(){

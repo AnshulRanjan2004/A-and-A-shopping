@@ -18,7 +18,7 @@ function HeroSection() {
           buttonSize='btn--large'>
           GET STARTED
         </Button> */}
-        <Button variant='info' href='/products'>GET STARTED</Button>
+        <Button variant='info' href='/products'><h4>GET STARTED</h4></Button>
       </div>
     </div>
   );
