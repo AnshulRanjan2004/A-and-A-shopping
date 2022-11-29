@@ -122,6 +122,7 @@
   }
 
   .card{
+    margin: auto;
     width: 28rem;
     height: 30rem;
   }
@@ -164,5 +165,9 @@
     background-color: rgb(139, 168, 168);
     flex: auto;
     margin: auto;
+  }
+
+  .col-md-4{
+    flex: auto;
   }
   
